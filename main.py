@@ -24,14 +24,6 @@ def count_clicks(token, url):
 if __name__ == '__main__':
 
   load_dotenv()
-  
-  TOKEN = os.getenv('BITLY_TOKEN')
-  BITLINK_URL = 'https://api-ssl.bitly.com/v4/bitlinks'
-  COUNTER_URL = 'https://api-ssl.bitly.com/v4/bitlinks/{}/clicks/summary'
-
-  HEADERS = {
-  'Authorization': 'Bearer {}'.format(TOKEN)
-  }
 
   token = os.getenv('BITLY_TOKEN')
   bitlink_url = 'https://api-ssl.bitly.com/v4/bitlinks'
